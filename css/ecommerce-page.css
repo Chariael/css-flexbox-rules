@@ -181,7 +181,44 @@ i.fa-th-list {
 
 /* GRID VIEW STYLES */
 
+h1 {
+  font-size: 18px;
+}
+
+.content-wrapper {
+  flex-direction: row;
+}
+
+.header-content, .logo-search, .search-bar, .options, .option, .categories{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 10px;
+}
+
+.section-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-options {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .grid.products {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 30px;
+align-items: top;
+justify-content: center;
 }
 
 .grid .product {
@@ -198,22 +235,37 @@ i.fa-th-list {
 }
 
 .grid .product-info {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding: 0 20px 30px;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
 }
 
 .grid .product-action {
-  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
   border-top: 1px solid #8d8ba5;
+  padding-top: 15px;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+display: flex;
+flex-direction: column;
+align-items: left;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .lines .product-image-wrapper {
@@ -222,20 +274,33 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
+  justify-content: center;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
-.lines .product-action {
-}
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .lines-action .product {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,13 +309,28 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .lines-action .product-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  min-height: 200px;
 }
