@@ -123,6 +123,9 @@ i.fa-th-list {
 }
 
 .section-control .view-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border: 1px solid #8d8ba5;
@@ -156,7 +159,6 @@ i.fa-th-list {
 }
 
 .product-price {
-  padding: 6px 12px;
   height: max-content;
 }
 
@@ -187,6 +189,7 @@ h1 {
 
 .content-wrapper {
   flex-direction: row;
+  max-width: 964px;
 }
 
 .header-content, .logo-search, .search-bar, .options, .option, .categories{
@@ -206,6 +209,10 @@ h1 {
   align-items: center;
 }
 
+.option {
+  flex-direction: column;
+}
+
 .view-options {
   display: flex;
   flex-direction: row;
@@ -218,7 +225,6 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 30px;
 align-items: top;
-justify-content: center;
 }
 
 .grid .product {
@@ -241,6 +247,7 @@ justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 20px;
+  height: 200px;
 }
 
 .grid .product-action {
